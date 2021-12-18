@@ -29,6 +29,7 @@ const sendEmail = async (data) => {
   const email = { ...data, from: "pryhorkomaksym@meta.ua" };
   try {
     await transporter.sendMail(email);
+    console.log("+");
     return true;
   } catch (error) {
     throw error;
