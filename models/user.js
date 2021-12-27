@@ -33,6 +33,11 @@ const userSchema = Schema(
       type: String,
       required: [true, "Verify token is required"],
     },
+    subscription: {
+      type: String,
+      enum: ["starter", "pro", "business"],
+      default: "starter",
+    },
   },
   { versionKey: false, timestamps: true }
 );

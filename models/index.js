@@ -4,6 +4,7 @@ const { Contact, contactJoiSchema, statusContactJoiSchema } = require("./contact
 
 const { User, userRegisterJoiSchema, userLoginJoiSchema } = require("./user");
 const { resendVerifyEmailJoiSchema } = require("./verify");
+const { subscriptionJoiSchema } = require("./subscription");
 
 module.exports = {
   Contact,
@@ -13,4 +14,5 @@ module.exports = {
   userRegisterJoiSchema,
   userLoginJoiSchema,
   resendVerifyEmailJoiSchema,
+  subscriptionJoiSchema,
 };
