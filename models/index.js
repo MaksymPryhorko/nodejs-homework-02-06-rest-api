@@ -1,12 +1,10 @@
 /* eslint-disable semi */
 /* eslint-disable quotes */
-const {
-  Contact,
-  contactJoiSchema,
-  statusContactJoiSchema,
-} = require("./contact");
+const { Contact, contactJoiSchema, statusContactJoiSchema } = require("./contact");
 
 const { User, userRegisterJoiSchema, userLoginJoiSchema } = require("./user");
+const { resendVerifyEmailJoiSchema } = require("./verify");
+const { subscriptionJoiSchema } = require("./subscription");
 
 module.exports = {
   Contact,
@@ -15,4 +13,6 @@ module.exports = {
   User,
   userRegisterJoiSchema,
   userLoginJoiSchema,
+  resendVerifyEmailJoiSchema,
+  subscriptionJoiSchema,
 };
